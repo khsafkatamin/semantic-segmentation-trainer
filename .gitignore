@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints (if used)
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+.env/
+env/
+*.env
+
+# PyTorch checkpoints and logs
+*.pth
+*.pt
+checkpoints/
+runs/  # TensorBoard logs
+
+# Dataset and cache directories
+datasets/*/raw_data/
+datasets/*/__pycache__/
+*.zip
+*.tar.gz
+
+# VSCode and IDE files
+.vscode/
+.idea/
+
+# Docker-related
+*.bak
+*.swp
+*.tmp
+*.log
+docker-compose.override.yml
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Configs that might be local
+*.yaml
+!configs/*.yaml  # Keep project configs
+
+# Avoid accidentally committing sensitive stuff
+credentials.json
