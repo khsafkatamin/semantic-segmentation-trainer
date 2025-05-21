@@ -19,7 +19,8 @@ checkpoints/
 runs/  # TensorBoard logs
 
 # Dataset and cache directories
-datasets/*/raw_data/
+datasets/**/raw_data/*
+!datasets/**/raw_data/.gitkeep
 datasets/*/__pycache__/
 *.zip
 *.tar.gz
@@ -45,3 +46,7 @@ Thumbs.db
 
 # Avoid accidentally committing sensitive stuff
 credentials.json
+
+# jpg/png files
+*.jpg
+*.png

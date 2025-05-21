@@ -9,8 +9,10 @@ RUN apt-get update && apt-get install -y \
     git \
     wget \
     python3 \
-    python3-pip && \
-    rm -rf /var/lib/apt/lists/*
+    python3-pip \
+    libglib2.0-0 \
+    libgl1 \
+    && rm -rf /var/lib/apt/lists/*
 
 # Link Python3
 RUN ln -sf /usr/bin/python3.10 /usr/bin/python && \
